@@ -129,7 +129,9 @@ export default function Card({ classes }) {
                     : null
                 )}
             </div>
-            <span>{telegram}</span>
+            <span className="p-1.5 rounded-full bg-transparent hover:bg-c-gray-5/40">
+              {telegram}
+            </span>
           </div>
         </div>
       </div>

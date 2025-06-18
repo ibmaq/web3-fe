@@ -1,4 +1,5 @@
 import { chevronRightIcon, filterIcon, searchIcon } from "@/public/icons";
+import { dummyPrivateMessagesData } from "@/app/(session)/(dashboard)/data";
 import Card from "./Card";
 
 export default function PrivateMessageFeedComp({
@@ -42,10 +43,11 @@ export default function PrivateMessageFeedComp({
         </div>
         {/* cards list */}
         <div className="h-full overflow-y-auto">
-          {Array.from({ length: 10 }).map((_, index) => (
+          {dummyPrivateMessagesData.map((data, index) => (
             <Card
               key={index}
               classes="border-b border-c-gray-2 last:border-b-0"
+              data={data}
             />
           ))}
         </div>

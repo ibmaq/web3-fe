@@ -1,6 +1,6 @@
-import FeedsManager from "./components/FeedsManager";
-import HeaderComp from "./components/HeaderComp";
-import TopNav from "./components/TopNav";
+import FeedsManager from "@/app/components/FeedsManager";
+import HeaderComp from "@/app/components/HeaderComp";
+import TopNav from "@/app/components/TopNav";
 
 export default function Home() {
   return (

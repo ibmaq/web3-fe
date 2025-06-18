@@ -171,3 +171,29 @@ export const telegram = (
     </defs>
   </svg>
 );
+export const twitter = (
+  <svg
+    width={21}
+    height={20}
+    viewBox="0 0 21 20"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g clipPath="url(#clip0_444_3074)">
+      <path
+        d="M12.5284 8.46864L19.8137 0H18.0873L11.7615 7.3532L6.709 0H0.881592L8.5219 11.1193L0.881592 20H2.60809L9.28837 12.2348L14.6241 20H20.4515L12.5279 8.46864H12.5284ZM10.1637 11.2173L9.38958 10.1101L3.23017 1.29967H5.88196L10.8527 8.40994L11.6268 9.51718L18.0881 18.7594H15.4363L10.1637 11.2177V11.2173Z"
+        fill="#E5E7EB"
+      />
+    </g>
+    <defs>
+      <clipPath id="clip0_444_3074">
+        <rect
+          width={20}
+          height={20}
+          fill="white"
+          transform="translate(0.666565)"
+        />
+      </clipPath>
+    </defs>
+  </svg>
+);
