@@ -1,7 +1,7 @@
 import { chevronRightIcon, filterIcon, searchIcon } from "@/public/icons";
 import Card from "./Card";
 
-export default function PrivateMessageFeedComp({
+export default function PublidFeedComp({
   currentIndex,
   totalFeeds,
   onPositionSwap,
@@ -11,7 +11,7 @@ export default function PrivateMessageFeedComp({
       <div className="flex flex-col h-full">
         <div className="flex items-center p-3 justify-between border-b-2 border-c-gray-2">
           <div className="flex gap-3 items-center group">
-            <p className="leading-130 font-bold">Private Messages</p>
+            <p className="leading-130 font-bold">Public Feed</p>
             <div className="flex gap-2 items-center opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all">
               <span
                 className={`rotate-180 ${
@@ -19,7 +19,10 @@ export default function PrivateMessageFeedComp({
                     ? "text-c-gray-9 cursor-pointer"
                     : "text-c-gray-8"
                 }`}
-                onClick={() => onPositionSwap(currentIndex, currentIndex - 1)}
+                onClick={() =>
+                  currentIndex > 0 &&
+                  onPositionSwap(currentIndex, currentIndex - 1)
+                }
               >
                 {chevronRightIcon}
               </span>
@@ -29,7 +32,10 @@ export default function PrivateMessageFeedComp({
                     ? "text-c-gray-9 cursor-pointer "
                     : "text-c-gray-8"
                 }`}
-                onClick={() => onPositionSwap(currentIndex, currentIndex + 1)}
+                onClick={() =>
+                  currentIndex < totalFeeds - 1 &&
+                  onPositionSwap(currentIndex, currentIndex + 1)
+                }
               >
                 {chevronRightIcon}
               </span>

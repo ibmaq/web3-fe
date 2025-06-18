@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistMono.variable} antialiased font-sf-pro`}
+        className={`${geistMono.variable} antialiased font-sf-pro flex flex-col`}
         style={{ fontFamily: "'SF Pro Display', sans-serif" }}
       >
         {children}

@@ -15,6 +15,12 @@
   --color-c-gray-1: #8e8e93;
   --color-c-gray-2: #374151;
   --color-c-gray-3: #1f2a37;
+  --color-c-gray-4: #1f1f1f;
+  --color-c-gray-5: #353535;
+  --color-c-gray-6: #6b7280;
+  --color-c-gray-7: #e5e7eb;
+  --color-c-gray-8: #9ca3af;
+  --color-c-gray-9: #f9fafb;
 
   --radius-12.5: 50px;
   --radius-5.75: 23px;
@@ -51,4 +57,13 @@ body {
   gap: 8px;
   padding: 4px 8px;
   background-color: #292524;
+}
+
+/** Hide all scrollbars */
+* {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+*::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
 }

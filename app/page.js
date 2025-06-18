@@ -1,12 +1,16 @@
 import FeedsManager from "./components/FeedsManager";
+import HeaderComp from "./components/HeaderComp";
+import TopNav from "./components/TopNav";
 
 export default function Home() {
   return (
-    <div className="">
-      <main className="p-4">
+    <main className="cursor-default">
+      <TopNav />
+      <div className="p-8 flex flex-col gap-4">
+        <HeaderComp />
         <FeedsManager />
-      </main>
-      <footer className=""></footer>
-    </div>
+      </div>
+    </main>
+    // <footer className=""></footer>
   );
 }
